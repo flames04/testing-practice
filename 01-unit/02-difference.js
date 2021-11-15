@@ -1,7 +1,8 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function difference() {
+function difference(number1, number2) {
+  return number1 - number2;
 
 }
 
