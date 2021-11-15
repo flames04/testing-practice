@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function sum(number1 =0, number2=0) {
+function sum(number1 = 0, number2 = 0) {
 	return number1 + number2;
 }
 
@@ -33,6 +33,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+  var result = sum();
+  if (result !== 0) throw new Error('Expected sum() to be 2. Received: ' + result);
 
   console.log('All tests passed successfully.');
 
