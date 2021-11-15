@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function product(number1, number2) {
+function product(number1 = 0, number2) {
   return number1 * number2;
 }
 
@@ -20,7 +20,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return 0 when either of the numbers are 0.
-
+  var result = product(2, 0);
+  if (result !== 0) throw new Error('Expected product(2, 2) to be 4. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
