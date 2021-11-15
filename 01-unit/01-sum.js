@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function sum(number1, number2) {
+function sum(number1, number2 = 0) {
 	return number1 + number2;
 }
 
