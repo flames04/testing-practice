@@ -21,12 +21,13 @@ try {
   // --------------------------------------------------
   // It should return 0 when either of the numbers are 0.
   var result = product(2, 0);
-  if (result !== 0) throw new Error('Expected product(2, 2) to be 4. Received: ' + result);
+  if (result !== 0) throw new Error('Expected product(2, 0) to be 4. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
-
+  var result = product(2, 2, 2, 2);
+  if (result !== 4) throw new Error('Expected product(2, 2, 2, 2) to be 4. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
