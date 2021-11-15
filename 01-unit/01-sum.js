@@ -1,8 +1,8 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function sum() {
-
+function sum(number1, number2) {
+	return number1 + number2;
 }
 
 // ==================================================
@@ -20,6 +20,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should ignore additional numbers.
+  var result = sum(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+  if (result !== 2) throw new Error('Expected sum(1, 1, 1, 1, 1, 1, 1, 1, 1, 1) to be 2. Received: ' + result);	 
 
   // --------------------------------------------------
   // Test Case 3
