@@ -23,7 +23,7 @@ function calc (operation, number1, number2){
     case 'multiply': 
       return product(number1, number2);
     case 'divide':
-      return quotient(numebr1, number2);
+      return quotient(number1, number2);
   }
 }
 
@@ -42,6 +42,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return the correct difference when the user provides: 'subtract', 20, 10.
+  var result = calc('subtract', 20, 10);
+  if (result !== 10) throw new Error('Expected calc("subtract", 20, 10) to be 10. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 3
