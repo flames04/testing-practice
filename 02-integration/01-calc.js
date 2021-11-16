@@ -1,8 +1,18 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
-
+function sum(number1 = 0, number2 = 0) {
+	return number1 + number2;
+}
+function difference(number1 = 0, number2 = 0) {
+  return number1 - number2;
+}
+function product(number1 = 0, number2 = 1) {
+  return number1 * number2;
+}
+function quotient(number1 = 0, number2 = 1) {
+  if  (number2 ===0) return `ERROR`;
+  return number1 / number2;
 }
 
 // ==================================================
