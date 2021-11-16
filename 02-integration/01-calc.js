@@ -14,6 +14,11 @@ function quotient(number1 = 0, number2 = 1) {
   if  (number2 ===0) return `ERROR`;
   return number1 / number2;
 }
+function calc (operation, number1, number2){
+  switch (operation) {
+    case 'add': return sum(number1, number2)
+  }
+}
 
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
